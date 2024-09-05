@@ -1,15 +1,87 @@
-h2 {
-    color: red;
-}
 
 /* 클래스 선택자를 쓸 때는 .클래스값으로 써야한다 */
-.highlight {
+/* .highlight {
     border: solid;
-}
+} */
 /* 아이디 선택자를 쓸 때는 #아이디값으로 써야한다 .*/
+body{
+    font-size: 3vw;
+}
+
+#top{
+    display: grid;
+    grid-template-columns: 4fr 7fr 4fr;
+    height: 10vw;
+    min-height: 10vw;
+    border-bottom: solid gray 0.1px;
+    margin-bottom: 3vw;
+    text-align: center;
+    padding-top: 3vw;
+}
+#top_img{
+    width: 30vw;
+    height: 10vw;
+    margin: auto;
+
+
+}
+#top img{
+   width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+
+i{
+    color: gray;
+}
+
+#top i{
+    font-size: 4vw;
+    margin-top: 3vw;
+}
+
+
+
+
+#top input{
+    height: 60%;
+    width: 95%;
+
+    margin: auto;
+    text-align: center;
+    background-color: rgb(250,250,250);
+    
+    border: solid gray 1px ;
+    border-radius: 3px;
+
+    font-size: 3vw;
+    font-weight: 100;
+
+}
+
 #profile{
-    border :solid;
-    border-color : blue;
+    display: grid;
+    grid-template-columns: 1fr 3.5fr;
+}
+#profile_info{
+    display: grid;
+    grid-template-rows: 1fr 1fr ;
+    
+    height: 15vw;
+}
+#id{
+    font-size: 6vw;
+    font-weight: 100;
+}
+button{
+    height: 80%;
+    width: 95%;
+    
+    font-size: 3vw;
+    background-color: white;
+    border: solid gray 1px;
+    border-radius: 3px;
 }
 
 .thumbnail_grid {
@@ -42,13 +114,37 @@ h2 {
     height: 100%;
     object-fit: cover;  
 }
-.highlight_pic{
-    height: 35px;
-    width : 35px;
-}
-  
 #profile_pic{
-    height: 50px;
-    width: 50px;
+    height: 15vw;
+    width: 15vw;
 } 
     
+.highlight_pic{
+    height: 10vw;
+    width : 10vw;
+    margin-left: auto ;
+    margin-right: auto;
+}
+  
+#highlight_area{
+    display: grid;
+    grid-template-columns: 12vw 12vw 1fr;
+}
+
+.highlight{
+    text-align: center;
+}
+
+ #sub_icons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+    text-align: center;
+    font-size: 5vw;
+
+    height: 8vw;
+} 
+
+.selected{
+    border-bottom: solid gray 3px;
+}
