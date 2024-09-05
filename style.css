@@ -131,8 +131,8 @@ button{ /*button css*/
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
-.thumbnail{/* class .thumbnail*/
+ .thumbnail{/* class .thumbnail*/
     width: 100%;
 
-}
+} 
 
