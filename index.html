@@ -5,90 +5,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="script.js"></script>
     <link href="style.css" rel='stylesheet'>
+    <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet" />
 </head>
 
 <body>
-    <img src="image/KakaoTalk_20240903_121031083.png" width="150px">
-    <input type="tel" value="검색">
+    <div id="top">
+        <div id="top_img">
+            <img src="image/KakaoTalk_20240903_121031083.png">
+        </div>
+        <input type="search" value="🔍검색">
 
-    <div id="profile">
-        <img src="image/profile.jpg" width="50px">
-        <!-- <br> 태그는 줄바꿈 기능이 있다.-->
-        <!-- <p> 태그는 문단을 나누는 태그 paragraph의 약자이다 
-         p태그는 줄바꿈을 표현하는 block이라는 속성이 있기때문에 옆에 글이 올 수 없다 . -->
         <div>
-            <h2>half_bottle</h2>
+            <i class="fas fa-home"></i>
+            <i class="far fa-paper-plane"></i>
+            <i class="far fa-compass"></i>
+            <i class="far fa-heart"></i>
+        </div>
+    </div>
+    <div id="profile">
+        <div id="profile_pic">
+            <img src="image/profile.jpg" class="circle_pic">
+        </div>
+        <div id="profile_info">
+            <div id="id"> 
+                <span>half_bottle</span> 
+                <i class="fas fa-cog"></i>
+            </div>
             <button>프로필 편집</button>
         </div>
     </div>
-    <!-- <button> - > 회색 버튼이 생긴다.
-        css를 공부하면 버튼의 크기와 색상, 모양을 여러분의 취향대로 수정할 수 있다 .
-        -->
+
     <div>
         <p>
-            <!-- <strong> 볼드체 표현-->
-            <strong>
+            <strong id="userInfo">
                 반병현(Bynghyun Ban)<br />
             </strong>
-            작가
+           <span id="summary">작가</span> 
         </p>
-        <p>
+        <p id="profileDetail">
             <a href="https://needleworm.github.io">
                 needleworm.github.io
             </a>
         </p>
     </div>
 
-    <div>
+    <div id="highlight_area">
         <div class="highlight">
-            <div>
-                <img src="image/hl1.jpg" height="35">
+            <div class="highlight_pic">
+                <img src="image/hl1.jpg" class="circle_pic">
             </div>
             <div>😎</div>
         </div>
         <div class="highlight">
-            <div>
-                <img src="image/hl2.jpg" height="35">
+            <div class="highlight_pic">
+                <img src="image/hl2.jpg" class="circle_pic">
             </div>
             <div>😊</div>
         </div>
+        <div></div>
+
 
     </div>
-    <div>
-        <p>
-        <div>
+    <div class="stat_bar">
+        <div class=" stat">
             게시물<br>
             133
         </div>
-        <div>
+        <div class=" stat">
             팔로워 <br>
             408
         </div>
-        <div>
+        <div class=" stat">
             팔로우 <br>
             189
         </div>
-        </p>
     </div>
-    <div> 아이콘이 들어갈 자리</div>
+    <div id="sub_icons">
+        <div class="selected">
+            <i class="fas fa-border-all"></i>
+        </div>
+        <div><i class="fas fa-film"></i></div>
+        <div><i class="far fa-play-circle"></i></div>
+        <div><i class="far fa-bookmark"></i></div>
+        <div><i class="fas fa-user-tag"></i></div>
+    </div>
+
     <div>
-        <!-- 퍼센트(%)로 지정된 값은 화면 크기에 따라 
-         이미지의 크기가 바뀐다.
-         이처럼 창 크기의 변화에 맞춰 화면의 정보나 사진의 크기가
-         바뀌는 웹 페이지를 반응형 웹 이라고한다 .
-         모든 웹페이지 외주제작에서 반응형 웹이 가장 비싼가격으로 거래되고있다
-         가장 수요가높고 난이도가 높기 떄문이다 -->
-         
-        <img src="image/thumbnails/1.jpg" width="32%">
-        <img src="image/thumbnails/2.jpg" width="32%">
-        <img src="image/thumbnails/3.jpg" width="32%">
-        <img src="image/thumbnails/4.jpg" width="32%">
-        <img src="image/thumbnails/5.jpg" width="32%">
-        <img src="image/thumbnails/6.jpg" width="32%">
-        <img src="image/thumbnails/7.jpg" width="32%">
-        <img src="image/thumbnails/8.jpg" width="32%">
-        <img src="image/thumbnails/9.jpg" width="32%">
+
+        <div class="thumbnail_grid">
+            <img src="image/thumbnails/1.jpg" class="thumbnail">
+            <img src="image/thumbnails/2.jpg" class="thumbnail">
+            <img src="image/thumbnails/3.jpg" class="thumbnail">
+        </div>
+
+        <div class="thumbnail_grid">
+            <img src="image/thumbnails/4.jpg" class="thumbnail">
+            <img src="image/thumbnails/5.jpg" class="thumbnail">
+            <img src="image/thumbnails/6.jpg" class="thumbnail">
+        </div>
+
+        <div class="thumbnail_grid">
+            <img src="image/thumbnails/7.jpg" class="thumbnail">
+            <img src="image/thumbnails/8.jpg" class="thumbnail">
+            <img src="image/thumbnails/9.jpg" class="thumbnail">
+        </div>
     </div>
 </body>
 
